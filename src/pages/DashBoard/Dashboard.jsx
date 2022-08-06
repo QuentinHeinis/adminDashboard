@@ -7,7 +7,7 @@ const MoneyCard = ({mainColor, lightColor, darkColor, icon, title, text}) => (<d
     <p className='text-white text-2xl'>
       {title}
     </p>
-    <span className='h-32 w-32 rounded-full absolute -top-8 -right-4' style={{backgroundColor: darkColor}}></span>
+    <span className={`h-32 w-32 rounded-full absolute -top-8 -right-4 bg-[${darkColor}]`}></span>
     <span className='h-20 w-20 rounded-full absolute -top-8 right-16' style={{backgroundColor: lightColor}}></span>
     <div className='absolute top-5 right-5 text-white'>
       <span className='px-1 py-[2px]'>Mois</span>
