@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { MenuAlt2Icon, BellIcon, CogIcon } from "@heroicons/react/outline";
 
 import avatar from '../data/product1.jpg'
-import { Notification, UserProfile, ThemeSettings } from '.'
+import { Notification, UserProfile, Settings } from '.'
 import { useStateContext } from '../contexts/ContextProvider'
 
 const NavButton = ({customFunc, icon, color, dotColor}) => (<button type='button' onClick={customFunc} style={{color}} className="relative text-xl rounded-full p-3 hover:bg-slate-50" >
@@ -43,7 +43,7 @@ const NavBar = () => {
           </p>
         </div>
         {isClicked.notification && <Notification/>}
-        {isClicked.setting && <ThemeSettings/>}
+        {isClicked.setting && <Settings/>}
         {isClicked.userProfile && <UserProfile/>}
       </div>
     </div>

@@ -4,6 +4,6 @@ export { default as Header } from './Header';
 export { default as NavBar } from './NavBar';
 export { default as Notification } from './Notification';
 export { default as SideBar } from './SideBar';
-export { default as ThemeSettings } from './ThemeSettings';
+export { default as Settings } from './Settings';
 export { default as UserProfile } from './UserProfile';
 export { default as Bar } from './Charts/Bar';
