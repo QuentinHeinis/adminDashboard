@@ -6,4 +6,4 @@ export { default as Notification } from './Notification';
 export { default as SideBar } from './SideBar';
 export { default as Settings } from './Settings';
 export { default as UserProfile } from './UserProfile';
-export { default as Bar } from './Charts/Bar';
+export { default as BarChart } from './Charts/BarChart';
