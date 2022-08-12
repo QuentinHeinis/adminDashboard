@@ -26,7 +26,7 @@ const MoneyCard = ({mainColor, lightColor, darkColor, icon, title, text}) => (<d
 const Dashboard = () => {
   
   return (
-    <div className='py-6 px-5 md:px-10 md:py-12'>
+    <div className='py-6 px-5 md:px-10 md:py-12 max-w-full'>
       <div className='flex justify-between mb-16'>
         <h1>Dashboard</h1> 
         <NavLink to='/transaction' className='flex items-center gap-3'>

@@ -27,7 +27,7 @@ const App = () => {
                     `dark:bg-slate-50 bg-slate-50 min-h-screen w-full ${activeMenu ?
                         'md:ml-72' : 'flex-1'}` 
                     }>
-                        <div className='sticky top-0 z-50 bg-slate-50 shadow-md shadow-[#99999910]'>
+                        <div className='sticky top-0 z-30 bg-slate-50 shadow-md shadow-[#99999910]'>
                             <NavBar />
                         </div>
 

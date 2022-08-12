@@ -29,7 +29,7 @@ const NavBar = () => {
   }, [screenSize])
 
   return (
-    <div className='flex justify-between p-2  relative bg-white'>
+    <div className='flex justify-between p-2  relative bg-white max-w-full'>
 
       <NavButton customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} color="black" icon={<MenuAlt2Icon className='h-6'/>}/>
       <div className='flex'>
