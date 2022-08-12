@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import {NavBar, Footer, SideBar, ThemeSettings } from './components'
-import { Materiels, Photos, Sorties, DashBoard, GestionBudget, FriendlySport, SuihiraBoutique, Calendrier, Todo} from './pages'
+import { Materiels, Photos, Sorties, DashBoard, GestionBudget, FriendlySport, SuihiraBoutique, Calendrier, Todo, ManualTransaction} from './pages'
 
 import './App.css'
 
@@ -27,7 +27,7 @@ const App = () => {
                     `dark:bg-slate-50 bg-slate-50 min-h-screen w-full ${activeMenu ?
                         'md:ml-72' : 'flex-1'}` 
                     }>
-                        <div className='static bg-slate-50'>
+                        <div className='sticky top-0 z-50 bg-slate-50 shadow-md shadow-[#99999910]'>
                             <NavBar />
                         </div>
 
@@ -37,6 +37,7 @@ const App = () => {
                             {/* Dashboard */}
                             <Route path="/" element={<DashBoard/>}/>
                             <Route path="/gestion" element={<GestionBudget/>}/>
+                            <Route path="/transaction" element={<ManualTransaction/>}/>
 
                             {/* Utilitaires */}
                             <Route path="/calendrier" element={<Calendrier/>}/>

@@ -4,6 +4,7 @@ export { default as Sorties } from './Climbing/Sorties';
 
 export { default as DashBoard } from './DashBoard/Dashboard';
 export { default as GestionBudget } from './DashBoard/GestionBudget';
+export { default as ManualTransaction } from './DashBoard/ManualTransaction';
 
 export { default as FriendlySport } from './Gestion/FriendlySport';
 export { default as SuihiraBoutique } from './Gestion/SuihiraBoutique';
