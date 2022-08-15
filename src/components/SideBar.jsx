@@ -9,8 +9,8 @@ import { links } from '../data/links';
 const SideBar = () => {
   const { activeMenu, setActiveMenu, screenSize } = useStateContext()
   const MenuStyle = "text-gray-400 mt-8 font-semibold"
-  const activeLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-main-purple font-semibold text-md m-2 bg-secondary-rose"
-  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 text-md m-2 hover:bg-gray-50"
+  const activeLink = "flex items-center relative z-0 gap-5 pl-4 pt-3 pb-2.5  text-main-purple font-semibold text-md m-2 bg-secondary-rose rounded-lg activeLink"
+  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 text-md m-2 Link z-0 relative"
 
 
   const handleCloseSideBar = () => {
