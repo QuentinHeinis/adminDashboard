@@ -1,10 +1,10 @@
 import React from 'react'
 import { TrendingDownIcon, TrendingUpIcon, LibraryIcon, PlusCircleIcon } from '@heroicons/react/outline'
-import { BarChart } from '../../components'
+import { BarChart, LastBuy } from '../../components'
 import { NavLink } from 'react-router-dom'
 
 // import { useStateContext } from '../../contexts/ContextProvider'clea
-const MoneyCard = ({mainColor, lightColor, darkColor, icon, title, text}) => (<div className='w-full h-64 rounded-xl flex flex-col overflow-hidden shadoow'>
+const MoneyCard = ({mainColor, lightColor, darkColor, icon, title, text}) => (<div className='max-w-full flex-auto min-w-[300px] h-64 rounded-xl flex flex-col overflow-hidden shadoow'>
   <div className='h-1/2 items-center flex pl-5 relative' style={{backgroundColor:mainColor}}>
     <p className='text-white text-2xl relative z-10'>
       {title}
@@ -33,13 +33,16 @@ const Dashboard = () => {
           Ajouter une transaction <PlusCircleIcon className='h-5 w-5'/>
         </NavLink>
       </div>
-      <div className='grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-9 flex-wrap gap-y-4'>
+      <div className='flex flex-wrap justify-between gap-9 gap-y-11'>
         <MoneyCard mainColor='#367FB4' darkColor='#245578' lightColor='#6AA6D1' text='1250' title='Total revenus' icon={<TrendingUpIcon className='h-10 w-10'/>}></MoneyCard>
         <MoneyCard mainColor='#7B214C' darkColor='#4E0E2C' lightColor='#B95284' text='1250' title='Total dépenses' icon={<TrendingDownIcon className='h-10 w-10'/>}></MoneyCard>
         <MoneyCard mainColor='#39B436' darkColor='#0D540B' lightColor='#85DB83' text='1250' title='Total économies' icon={<LibraryIcon className='h-10 w-10'/>}></MoneyCard>
       </div>
       
+      <div className='max-w-full py-11 flex-wrap justify flex gap-9 gap-y-11'>
         <BarChart/>
+        <LastBuy/>
+      </div>
       
     </div>
   )

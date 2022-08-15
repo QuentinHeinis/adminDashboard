@@ -1,6 +1,7 @@
 export { default as Button } from './Button';
 export { default as Footer } from './Footer';
 export { default as Header } from './Header';
+export { default as LastBuy } from './LastBuy';
 export { default as NavBar } from './NavBar';
 export { default as Notification } from './Notification';
 export { default as SideBar } from './SideBar';
